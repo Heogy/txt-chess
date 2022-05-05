@@ -21,7 +21,4 @@ jobs:
           pip install -r requirements.txt
       - name: Run tests with pytest
         run: |
-          pwd
-          ls -l
-          pytest ./move-test.py
-
+          python3 -m pytest moves-test.py
