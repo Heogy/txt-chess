@@ -23,5 +23,5 @@ jobs:
         run: |
           pwd
           ls -l
-          pytest move-test.py
+          pytest ./move-test.py
 
