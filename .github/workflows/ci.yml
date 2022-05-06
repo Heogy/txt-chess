@@ -24,7 +24,7 @@ jobs:
           pip install -r requirements.txt
       - name: Run tests with pytest
         run: |
-          python3 -m pytest moves-test.py --junitxml=test-results.xml
+          python3 -m pytest --junitxml=test-results.xml
       - name: Publish Unit Test Results
         uses: EnricoMi/publish-unit-test-result-action@v1
         if: always()
